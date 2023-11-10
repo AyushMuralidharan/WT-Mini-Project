@@ -4,7 +4,7 @@ body {
     color: whitesmoke;
     opacity: 0.85;
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -38,6 +38,12 @@ button:hover {
     transition: 400ms;
 }
 
+button:active #line {
+    background-color: rgb(170, 100, 255);
+    color: black;
+    transition: 100ms;
+}
+
 #line {
     width: 35px;
     height: 5px;
@@ -60,6 +66,7 @@ button:hover {
 }
 
 #enter {
+
     color: grey;
     background-color: transparent;
     display: flex;
