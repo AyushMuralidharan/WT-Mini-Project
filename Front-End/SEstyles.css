@@ -83,25 +83,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.settings-panels {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* horizontally center the panels */
-    align-items: center;
-    /* vertically center the panels */
-    position: relative;
-    top: 20%;
-}
-
-.panel {
-    margin: auto 20px;
-    padding: 20px 80px;
-    border: 2px solid whitesmoke;
-    border-radius: 18px;
-}
-
-.panel:hover {
-    border:2px solid rgb(170, 100, 255)
-}
