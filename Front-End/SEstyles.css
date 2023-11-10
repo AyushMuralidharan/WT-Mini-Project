@@ -12,18 +12,22 @@ body {
 }
 
 .menu {
-    display: flex; /* make the menu items appear next to each other */
-    flex-direction: column; /* make the menu items appear below each other */
+    display: flex;
+    /* make the menu items appear next to each other */
+    flex-direction: column;
+    /* make the menu items appear below each other */
     position: fixed;
     top: 15px;
     right: 15px;
 }
 
-button {
+.menu-button {
     background-color: black;
     border: 1px solid black;
-    border-radius: 20px; /* make the button a perfect circle */
-    width: 70px; /* set the width and height to the same value */
+    border-radius: 20px;
+    /* make the button a perfect circle */
+    width: 70px;
+    /* set the width and height to the same value */
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -32,13 +36,13 @@ button {
     transition: 400ms;
 }
 
-button:hover {
+.menu-button:hover {
     background-color: rgb(70, 70, 70);
     color: black;
     transition: 400ms;
 }
 
-button:active #line {
+.menu-button:active #line {
     background-color: rgb(170, 100, 255);
     color: black;
     transition: 100ms;
@@ -50,7 +54,7 @@ button:active #line {
     background-color: white;
     margin: 4px 0;
     border-radius: 15px;
-    
+
 }
 
 #message {
@@ -60,9 +64,12 @@ button:active #line {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 45%; /* position the message in the center of the screen */
-    left: 50%; /* position the message in the center of the screen */
-    transform: translate(-50%, -50%); /* center the message */
+    top: 45%;
+    /* position the message in the center of the screen */
+    left: 50%;
+    /* position the message in the center of the screen */
+    transform: translate(-50%, -50%);
+    /* center the message */
 }
 
 #enter {
@@ -75,4 +82,26 @@ button:active #line {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.settings-panels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* horizontally center the panels */
+    align-items: center;
+    /* vertically center the panels */
+    position: relative;
+    top: 20%;
+}
+
+.panel {
+    margin: auto 20px;
+    padding: 20px 80px;
+    border: 2px solid whitesmoke;
+    border-radius: 18px;
+}
+
+.panel:hover {
+    border:2px solid rgb(170, 100, 255)
 }
