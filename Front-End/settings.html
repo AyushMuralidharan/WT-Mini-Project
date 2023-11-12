@@ -1,37 +1,42 @@
 <html>
-    <head>
-        <title>Settings</title>
-        <link rel="stylesheet" href="SEstyles.css">
-    </head>
-    <body>
-        <div class="menu">
-            <button class="menu-button">
-                <div id="line"></div>
-                <div id="line"></div>
-                <div id="line"></div>
-            </button>
+
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="SEstyles.css">
+</head>
+
+<body>
+    <h1 id="settings-title"">Settings</h1>
+        <div class=" menu">
+        <button class="menu-button">
+            <div id="line"></div>
+            <div id="line"></div>
+            <div id="line"></div>
+        </button>
         </div>
         <div class="settings-panels">
             <div class="panel">
-                <h2>My Data</h2>
-                <p>Export my data</p>
-                <p>Delete my data</p>
+                <h2> > My Data</h2>
+                <button id="set-options">Export my data</button>
+                <button id="set-options">Delete my data</button>
             </div>
             <div class="panel">
-                <h2>Panel 2</h2>
-                <p>Hide/Show player</p>
+                <h2> > Music</h2>
+                <button id="set-options">Hide/Show player</button>
             </div>
             <div class="panel">
-                <h2>Change Password</h2>
-                <p>Old password</p>
-                <input type="password" name="old-password" id="old-password">
-                <p>New password</p>
-                <input type="password" name="new-password" id="new-password">
-                <p>Confirm new password</p>
-                <input type="password" name="confirm-new-password" id="confirm-new-password">
-                <button id="change"">Change password</button>
-                <button id="change"">Cancel</button>
+                <h2> > Change Password</h2>
+                <form action="mainPage.html" method="post">
+                <label for="change-password"><b>Old Password</b></label>
+                <input type="change-password" placeholder="Enter old password" name="change-password" required>
+                <label for="change-password"><b>New Password</b></label>
+                <input type="change-password" placeholder="Enter new password" name="change-password" required>
+                <label for="change-password"><b>Confirm New Password</b></label>
+                <input type="change-password" placeholder="Re-enter new password" name="change-password" required>
+                <button id="change">Change password</button>
+                </form>
             </div>
         </div>
-    </body>
+</body>
+
 </html>
