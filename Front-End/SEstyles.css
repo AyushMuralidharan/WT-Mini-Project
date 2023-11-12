@@ -3,6 +3,9 @@ body {
     color: whitesmoke;
     opacity: 0.85;
     background-color: black;
+    background-image: url(star-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -24,7 +27,6 @@ body {
     background-color: black;
     border: 1px solid black;
     border-radius: 20px;
-    /* make the button a perfect circle */
     width: 70px;
     /* set the width and height to the same value */
     height: 70px;
@@ -183,6 +185,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     border: 1px solid whitesmoke;
+    background: black;
     padding: 30px;
     margin: 30px;
     flex: 1;
@@ -233,4 +236,50 @@ input[type=change-password] {
     color: white;
     background-color: rgb(170, 100, 255);
     transition: 200ms;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* selectionView.html Styling */
+.play-pause {
+    display: flex;
+    flex-direction: row;
+    top: 15px;
+    left: 15px;
+    position: fixed;
+}
+
+.play-pause-button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+.play-pause-button:hover {
+    background-color: rgb(70, 70, 70);
+    color: black;
+    transition: 400ms;
+}
+
+.selection-view {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+#question-view, #user-info {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;    
+    height: 500px;
+    padding: 0 70px;
+    transform: translate(0%, 25%);   
 }
