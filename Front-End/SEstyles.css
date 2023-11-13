@@ -249,7 +249,12 @@ input[type=change-password] {
 }
 
 .play-pause-button {
-    background-color: white;
+    background-color: black;
+    background-image: url(triangle-thin.svg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
     border: 1px solid black;
     border-radius: 50%;
     width: 70px;
@@ -259,6 +264,7 @@ input[type=change-password] {
     justify-content: center;
     align-items: center;
     transition: 400ms;
+    transform: rotate(90deg);
 }
 
 .play-pause-button:hover {
@@ -267,7 +273,7 @@ input[type=change-password] {
     transition: 400ms;
 }
 
-.selection-view {
+.selection-view, .user-data-view {
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -279,7 +285,134 @@ input[type=change-password] {
     display: flex;
     flex-direction: column;
     flex: 1;    
+    position: relative;
     height: 500px;
     padding: 0 70px;
     transform: translate(0%, 25%);   
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* userInfo.html Styling */
+#to-do-list, #notes {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex: 1;    
+        padding: 0 70px;
+        transform: translate(0%, 155%); /* change later */
+        position: relative;
+    }
+
+/* -------------------------------------------------------------------------------------------- */
+/* questionMenu.html Styling */
+.questions-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+#question {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+    margin: 0 70px;
+    top: 30%;
+    position: relative;
+}
+
+#next-q, #prev-q {
+    font-size: 36px;
+    margin: 0 70px;
+    background-color: black;
+    border: 1px solid transparent;
+    color: grey ;
+    border-radius: 20px;
+    width: 70px;
+    /* set the width and height to the same value */
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+#next-q:hover, #prev-q:hover {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    transition: 400ms;
+}
+
+.user-entry {
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 70px;
+    position: relative;
+    top: 70%;
+    left: 17%
+}
+
+textarea{
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(40, 40, 40);
+    border-radius: 15px;
+    width: 500px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    resize: none;
+}
+/* Add a custom scrollbar to the body element */
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(70, 70, 70);
+    border-radius: 6px;
+    border: 3px solid transparent;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
+#save-entries {
+    width: 100;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 15px;
+    transition: 200ms;
+}
+
+#save-entries:hover {
+    color: white;
+    background-color: rgb(170, 100, 255);
+    transition: 200ms;
 }
